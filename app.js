@@ -15,6 +15,8 @@ mongoose.connect(`mongodb+srv://ahkar33:A09599m376*@auth.deuhhaf.mongodb.net/?re
   console.log("Connected to MongoDB");
 });
 
+app.get('/', (req, res) => res.send("hello world"));
+
 app.use(cors({
   origin: 'http://localhost:5173'
 }))
