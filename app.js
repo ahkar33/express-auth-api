@@ -11,7 +11,7 @@ const app = express();
 
 mongoose.set("strictQuery", false);
 // mongoose.connect("mongodb://127.0.0.1:27017/auth", () => console.log("Connected to MongoDB"));
-mongoose.connect(`mongodb+srv://${process.env.MONGO_USER_NAME}:${process.env.MONGO_PASSWORD}@auth.deuhhaf.mongodb.net/?retryWrites=true&w=majority`, () => {
+mongoose.connect(`mongodb+srv://ahkar33:A09599m376*@auth.deuhhaf.mongodb.net/?retryWrites=true&w=majority`, () => {
   console.log("Connected to MongoDB");
 });
 

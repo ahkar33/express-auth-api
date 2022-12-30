@@ -6,7 +6,7 @@ import jwt from 'jsonwebtoken'
 
 dotenv.config();
 
-const saltRounds = parseInt(process.env.SALTROUNDS);
+const saltRounds = parseInt("10");
 
 export const login = async (req, res) => {
 	const { email, password } = req.body;
@@ -23,7 +23,7 @@ export const login = async (req, res) => {
 	}
 	const accessToken = jwt.sign(
 		{ id: user.id, email: user.email },
-		process.env.SECRET_ACCESS_TOEKN,
+		"234kjf(*)ui234r-09i<.,jfo;.2j3ljrlej02934o0wdhjlaosdjf[q2039845uodfja;lkdjf",
 		{ expiresIn: '3d' }
 	);
 	return res.status(200).json({ user: { id: user.id, email: user.email }, accessToken: accessToken });
